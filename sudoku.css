@@ -1,0 +1,87 @@
+/*Taken from https://github.com/callumacrae/sudoku-creator*/
+
+body {	
+	text-align: center;
+}
+		
+a {
+	display: block;
+	margin-top: 50px;
+}
+
+/*End taken CSS*/
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+}
+
+td:nth-child(3), td:nth-child(6), td:nth-child(9){
+    border-right-width: 3px;
+}
+
+tr:nth-child(3) td, tr:nth-child(6) td, tr:nth-child(9) td{
+    border-bottom-width: 3px;
+}
+
+tr:nth-child(1) td{
+    border-top-width: 3px;
+}
+
+td:nth-child(1) {
+    border-left-width: 3px;
+}
+
+input {
+	width: 48px;
+    height: 48px;
+    border:0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.correct {
+	background-color: '#808080'
+}
+
+button {
+   border-top: 1px solid #8694a3;
+   background: #f2f2f2;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6c6d8a), to(#f2f2f2));
+   background: -webkit-linear-gradient(top, #6c6d8a, #f2f2f2);
+   background: -moz-linear-gradient(top, #6c6d8a, #f2f2f2);
+   background: -ms-linear-gradient(top, #6c6d8a, #f2f2f2);
+   background: -o-linear-gradient(top, #6c6d8a, #f2f2f2);
+   padding: 9px 18px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 12px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   margin: 20px 45px;
+}
+button:hover {
+   border-top-color: #8f8f8f;
+   background: #8f8f8f;
+   color: #000000;
+}
+button:active {
+   border-top-color: #8f8f8f;
+   background: #8f8f8f;
+}
